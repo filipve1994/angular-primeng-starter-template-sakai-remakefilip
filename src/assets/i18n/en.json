@@ -1,0 +1,11 @@
+{
+  "main":{
+    "greeting": "Hello {{name}}, see how easy it is to translate your Angular App!",
+    "title": "Angular + Transloco Example"
+  },
+  "pipe":{
+    "greeting": "Hello {{name}}, we are using pipes now!",
+    "title": "Translation Pipes"
+  },
+  "title": "AngularV18Startertemplate-EN"
+}
