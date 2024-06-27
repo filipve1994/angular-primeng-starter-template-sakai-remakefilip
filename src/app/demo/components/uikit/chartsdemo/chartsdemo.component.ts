@@ -2,15 +2,14 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {debounceTime, Subscription} from 'rxjs';
 import {LayoutService} from "@layout/service/app.layout.service";
 import {ChartModule} from "primeng/chart";
-import {CommonModule} from "@angular/common";
+
 
 @Component({
   selector: 'app-chartsdemo',
   standalone: true,
   imports: [
-    CommonModule,
     ChartModule
-  ],
+],
   templateUrl: './chartsdemo.component.html',
   styleUrl: './chartsdemo.component.scss'
 })

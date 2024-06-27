@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CommonModule} from "@angular/common";
+
 import {FormsModule} from "@angular/forms";
 import {FormlayoutdemoRoutingModule} from "@demo/components/uikit/formlayoutdemo/formlayoutdemo-routing.module";
 import {AutoCompleteModule} from "primeng/autocomplete";
@@ -17,9 +17,7 @@ import {InputTextModule} from "primeng/inputtext";
   selector: 'app-formlayoutdemo',
   standalone: true,
   imports: [
-    CommonModule,
     FormsModule,
-    // FormlayoutdemoRoutingModule,
     AutoCompleteModule,
     CalendarModule,
     ChipsModule,
@@ -30,7 +28,7 @@ import {InputTextModule} from "primeng/inputtext";
     MultiSelectModule,
     InputTextareaModule,
     InputTextModule
-  ],
+],
   templateUrl: './formlayoutdemo.component.html',
   styleUrl: './formlayoutdemo.component.scss'
 })

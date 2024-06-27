@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectItem } from 'primeng/api';
 import {DataView, DataViewModule} from 'primeng/dataview';
-import {CommonModule} from "@angular/common";
+
 import {ListdemoRoutingModule} from "@demo/components/uikit/listdemo/listdemo-routing.module";
 import {FormsModule} from "@angular/forms";
 import {PickListModule} from "primeng/picklist";
@@ -17,8 +17,6 @@ import {ProductService} from "@demo/service/product.service";
   selector: 'app-listdemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // ListdemoRoutingModule,
     FormsModule,
     DataViewModule,
     PickListModule,
@@ -27,7 +25,7 @@ import {ProductService} from "@demo/service/product.service";
     DropdownModule,
     RatingModule,
     ButtonModule
-  ],
+],
   templateUrl: './listdemo.component.html',
   styleUrl: './listdemo.component.scss'
 })

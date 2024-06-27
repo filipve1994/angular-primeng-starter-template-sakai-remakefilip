@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem} from 'primeng/api';
-import {CommonModule} from "@angular/common";
+
 import {PanelsdemoRoutingModule} from "@demo/components/uikit/panelsdemo/panelsdemo-routing.module";
 import {FormsModule} from "@angular/forms";
 import {ToolbarModule} from "primeng/toolbar";
@@ -20,8 +20,6 @@ import {PanelModule} from "primeng/panel";
   selector: 'app-panelsdemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // PanelsdemoRoutingModule,
     FormsModule,
     ToolbarModule,
     ButtonModule,
@@ -35,7 +33,7 @@ import {PanelModule} from "primeng/panel";
     DividerModule,
     SplitterModule,
     PanelModule
-  ],
+],
   templateUrl: './panelsdemo.component.html',
   styleUrl: './panelsdemo.component.scss'
 })

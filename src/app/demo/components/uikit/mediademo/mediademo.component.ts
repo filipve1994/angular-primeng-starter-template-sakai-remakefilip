@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {CommonModule} from "@angular/common";
+
 import {MediademoRoutingModule} from "@demo/components/uikit/mediademo/mediademo-routing.module";
 import {ButtonModule} from "primeng/button";
 import {ImageModule} from "primeng/image";
@@ -14,13 +14,11 @@ import {Product} from "@demo/api/product";
   selector: 'app-mediademo',
   standalone: true,
   imports: [
-    CommonModule,
-    // MediademoRoutingModule,
     ButtonModule,
     ImageModule,
     GalleriaModule,
     CarouselModule
-  ],
+],
   templateUrl: './mediademo.component.html',
   styleUrl: './mediademo.component.scss'
 })

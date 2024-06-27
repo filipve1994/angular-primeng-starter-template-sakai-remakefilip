@@ -1,15 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {LayoutService} from "@layout/service/app.layout.service";
-import {CommonModule} from "@angular/common";
+
 import {AppMenuitemComponent} from "@layout/app-menuitem/app-menuitem.component";
 
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
-    CommonModule,
     AppMenuitemComponent
-  ],
+],
   templateUrl: './app-menu.component.html',
   styleUrl: './app-menu.component.scss'
 })

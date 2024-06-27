@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ConfirmationService, MessageService} from 'primeng/api';
-import {CommonModule} from "@angular/common";
+
 import {OverlaysdemoRoutingModule} from "@demo/components/uikit/overlaysdemo/overlaysdemo-routing.module";
 import {ToastModule} from "primeng/toast";
 import {DialogModule} from "primeng/dialog";
@@ -22,8 +22,6 @@ import {ProductService} from "@demo/service/product.service";
   selector: 'app-overlaysdemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // OverlaysdemoRoutingModule,
     ToastModule,
     DialogModule,
     FormsModule,
@@ -36,7 +34,7 @@ import {ProductService} from "@demo/service/product.service";
     SidebarModule,
     RippleModule,
     ConfirmPopupModule
-  ],
+],
   templateUrl: './overlaysdemo.component.html',
   styleUrl: './overlaysdemo.component.scss',
   providers: [ConfirmationService, MessageService]

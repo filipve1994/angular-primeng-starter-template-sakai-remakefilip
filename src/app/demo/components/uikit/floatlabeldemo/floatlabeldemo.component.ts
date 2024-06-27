@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {CommonModule} from "@angular/common";
+
 import {FormsModule} from "@angular/forms";
 import {FloatlabeldemoRoutingModule} from "@demo/components/uikit/floatlabeldemo/floatlabeldemo-routing.module";
 import {AutoCompleteModule} from "primeng/autocomplete";
@@ -20,9 +20,7 @@ import {CountryService} from "@demo/service/country.service";
   selector: 'app-floatlabeldemo',
   standalone: true,
   imports: [
-    CommonModule,
     FormsModule,
-    // FloatlabeldemoRoutingModule,
     AutoCompleteModule,
     CalendarModule,
     ChipsModule,
@@ -35,7 +33,7 @@ import {CountryService} from "@demo/service/country.service";
     InputTextModule,
     InputGroupModule,
     InputGroupAddonModule
-  ],
+],
   templateUrl: './floatlabeldemo.component.html',
   styleUrl: './floatlabeldemo.component.scss'
 })

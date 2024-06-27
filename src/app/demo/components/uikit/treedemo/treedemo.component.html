@@ -11,18 +11,26 @@
       <p-treeTable [value]="files2" [columns]="cols" selectionMode="checkbox" [(selection)]="selectedFiles2">
         <ng-template pTemplate="header" let-columns>
           <tr>
-            <th *ngFor="let col of columns">
-              {{ col.header }}
-            </th>
+            @for (col of columns; track col) {
+              <th>
+                {{ col.header }}
+              </th>
+            }
           </tr>
         </ng-template>
         <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
           <tr>
-            <td *ngFor="let col of columns; let i = index">
-              <p-treeTableToggler [rowNode]="rowNode" *ngIf="i === 0"></p-treeTableToggler>
-              <p-treeTableCheckbox [value]="rowNode" *ngIf="i === 0"></p-treeTableCheckbox>
-              {{ rowData[col.field] }}
-            </td>
+            @for (col of columns; track col; let i = $index) {
+              <td>
+                @if (i === 0) {
+                  <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+                }
+                @if (i === 0) {
+                  <p-treeTableCheckbox [value]="rowNode"></p-treeTableCheckbox>
+                }
+                {{ rowData[col.field] }}
+              </td>
+            }
           </tr>
         </ng-template>
       </p-treeTable>

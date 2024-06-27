@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectItem } from 'primeng/api';
-import {CommonModule} from "@angular/common";
+
 import {InputdemoRoutingModule} from "@demo/components/uikit/inputdemo/inputdemo-routing.module";
 import {FormsModule} from "@angular/forms";
 import {AutoCompleteModule} from "primeng/autocomplete";
@@ -33,8 +33,6 @@ import {CountryService} from "@demo/service/country.service";
   selector: 'app-inputdemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // InputdemoRoutingModule,
     FormsModule,
     AutoCompleteModule,
     CalendarModule,
@@ -60,7 +58,7 @@ import {CountryService} from "@demo/service/country.service";
     ButtonModule,
     InputGroupModule,
     InputGroupAddonModule
-  ],
+],
   templateUrl: './inputdemo.component.html',
   styleUrl: './inputdemo.component.scss'
 })

@@ -1,15 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {IconService} from "@demo/service/icon.service";
 import {InputTextModule} from "primeng/inputtext";
-import {CommonModule} from "@angular/common";
+
 
 @Component({
   selector: 'app-icons',
   standalone: true,
   imports: [
-    CommonModule,
     InputTextModule
-  ],
+],
   templateUrl: './icons.component.html',
   styleUrl: './icons.component.scss'
 })

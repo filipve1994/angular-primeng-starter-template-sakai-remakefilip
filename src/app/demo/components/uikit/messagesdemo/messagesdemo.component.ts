@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {Message, MessageService} from 'primeng/api';
-import {CommonModule} from "@angular/common";
+
 import {MessagesdemoRoutingModule} from "@demo/components/uikit/messagesdemo/messagesdemo-routing.module";
 import {MessagesModule} from "primeng/messages";
 import {MessageModule} from "primeng/message";
@@ -12,14 +12,12 @@ import {InputTextModule} from "primeng/inputtext";
   selector: 'app-messagesdemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // MessagesdemoRoutingModule,
     MessagesModule,
     MessageModule,
     ButtonModule,
     ToastModule,
     InputTextModule
-  ],
+],
   templateUrl: './messagesdemo.component.html',
   styleUrl: './messagesdemo.component.scss',
   providers: [MessageService]

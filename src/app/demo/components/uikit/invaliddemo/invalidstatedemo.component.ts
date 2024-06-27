@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {CountryService} from "@demo/service/country.service";
-import {CommonModule} from "@angular/common";
+
 import {InvaliddemoRoutingModule} from "@demo/components/uikit/invaliddemo/invaliddemo-routing.module";
 import {FormsModule} from "@angular/forms";
 import {AutoCompleteModule} from "primeng/autocomplete";
@@ -19,8 +19,6 @@ import {InputTextModule} from "primeng/inputtext";
   selector: 'app-invalidstatedemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // InvaliddemoRoutingModule,
     FormsModule,
     AutoCompleteModule,
     CalendarModule,
@@ -33,7 +31,7 @@ import {InputTextModule} from "primeng/inputtext";
     PasswordModule,
     InputTextareaModule,
     InputTextModule
-  ],
+],
   templateUrl: './invalidstatedemo.component.html',
   styleUrl: './invalidstatedemo.component.scss'
 })

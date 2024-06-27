@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import {CommonModule} from "@angular/common";
+
 import {ButtondemoRoutingModule} from "@demo/components/uikit/buttondemo/buttondemo-routing.module";
 import {ButtonModule} from "primeng/button";
 import {RippleModule} from "primeng/ripple";
@@ -11,13 +11,11 @@ import {ToggleButtonModule} from "primeng/togglebutton";
   selector: 'app-buttondemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // ButtondemoRoutingModule,
     ButtonModule,
     RippleModule,
     SplitButtonModule,
     ToggleButtonModule
-  ],
+],
   templateUrl: './buttondemo.component.html',
   styleUrl: './buttondemo.component.scss'
 })

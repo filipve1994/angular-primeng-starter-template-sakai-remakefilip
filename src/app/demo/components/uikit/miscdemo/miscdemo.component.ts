@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {CommonModule} from "@angular/common";
+
 import {MiscdemoRoutingModule} from "@demo/components/uikit/miscdemo/miscdemo-routing.module";
 import {ProgressBarModule} from "primeng/progressbar";
 import {BadgeModule} from "primeng/badge";
@@ -16,8 +16,6 @@ import {ScrollTopModule} from "primeng/scrolltop";
   selector: 'app-miscdemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // MiscdemoRoutingModule,
     ProgressBarModule,
     BadgeModule,
     AvatarModule,
@@ -28,7 +26,7 @@ import {ScrollTopModule} from "primeng/scrolltop";
     SkeletonModule,
     AvatarGroupModule,
     ScrollTopModule
-  ],
+],
   templateUrl: './miscdemo.component.html',
   styleUrl: './miscdemo.component.scss'
 })

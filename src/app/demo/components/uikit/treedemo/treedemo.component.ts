@@ -3,7 +3,7 @@ import { TreeNode} from 'primeng/api';
 import {NodeService} from "@demo/service/node.service";
 import {TreeModule} from "primeng/tree";
 import {TreeTableModule} from "primeng/treetable";
-import {CommonModule} from "@angular/common";
+
 import {TreedemoRoutingModule} from "@demo/components/uikit/treedemo/treedemo-routing.module";
 import {FormsModule} from "@angular/forms";
 
@@ -11,12 +11,10 @@ import {FormsModule} from "@angular/forms";
   selector: 'app-treedemo',
   standalone: true,
   imports: [
-    CommonModule,
-    // TreedemoRoutingModule,
     FormsModule,
     TreeModule,
     TreeTableModule
-  ],
+],
   templateUrl: './treedemo.component.html',
   styleUrl: './treedemo.component.scss'
 })

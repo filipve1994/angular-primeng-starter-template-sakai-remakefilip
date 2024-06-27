@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MegaMenuItem, MenuItem} from 'primeng/api';
-import {CommonModule} from "@angular/common";
+
 import {MenusdemoRoutingModule} from "@demo/components/uikit/menusdemo/menusdemo-routing.module";
 import {BreadcrumbModule} from "primeng/breadcrumb";
 import {MenubarModule} from "primeng/menubar";
@@ -18,8 +18,6 @@ import {InputTextModule} from "primeng/inputtext";
   selector: 'app-menus',
   standalone: true,
   imports: [
-    CommonModule,
-    // MenusdemoRoutingModule,
     BreadcrumbModule,
     MenubarModule,
     TabMenuModule,
@@ -31,7 +29,7 @@ import {InputTextModule} from "primeng/inputtext";
     MegaMenuModule,
     PanelMenuModule,
     InputTextModule
-  ],
+],
   templateUrl: './menus.component.html',
   styleUrl: './menus.component.scss'
 })
